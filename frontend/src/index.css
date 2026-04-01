@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+:root {
+  color-scheme: dark;
+
+  /* ── Design System Tokens ── */
+  --surface:               #121315;
+  --surface-container:     #1f2021;
+  --surface-container-low: #1b1c1d;
+  --surface-container-high:#292a2b;
+  --surface-container-highest:#343536;
+  --surface-container-lowest:#0d0e0f;
+  --surface-bright:        #38393a;
+  --surface-variant:       #343536;
+
+  --primary:               #bbc3ff;
+  --primary-container:     #0036ff;
+  --on-primary:            #001c95;
+  --on-primary-container:  #c7ccff;
+
+  --secondary:             #c4c4e2;
+  --secondary-container:   #46475f;
+  --on-secondary:          #2d2e46;
+  --on-secondary-container:#b6b6d3;
+
+  --tertiary:              #c8c6c5;
+  --tertiary-container:    #595858;
+  --on-tertiary:           #313030;
+  --on-tertiary-container: #d1cece;
+
+  --on-surface:            #e3e2e3;
+  --on-surface-variant:    #c4c5da;
+  --on-background:         #e3e2e3;
+  --background:            #121315;
+
+  --outline:               #8e8fa3;
+  --outline-variant:       #444657;
+
+  --error:                 #ffb4ab;
+  --error-container:       #93000a;
+
+  --inverse-primary:       #1c41ff;
+  --inverse-surface:       #e3e2e3;
+  --inverse-on-surface:    #303032;
+
+  /* ── Legacy tokens (kept for Analyzer page) ── */
+  --bg:           #0d1116;
+  --bg-accent:    #121b24;
+  --panel:        #111821;
+  --panel-border: #1d2a36;
+  --text:         #e6edf3;
+  --muted:        #9fb0c1;
+  --accent:       #5ee4c1;
+  --accent-strong:#22c9a2;
+  --warning:      #f5c542;
+  --orange:       #f2994a;
+  --red:          #ff6b6b;
+  --green:        #63d471;
+  --shadow:       0 20px 50px rgba(0,0,0,0.45);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--primary-container);
+  color: #fff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
